@@ -11,34 +11,47 @@
   <link rel="icon" type="image/x-icon" href="img/Logo.png">
   </head>
   <body>
-    <section >
-    <div class="inti">
-      <div class="Vector">
-        <img class="logoImg" src="img/Logo.png">
-        <h1  class="tittle">Encriptador de mensaje</h1>
-      </div>
-      <div class="left">
-        <textarea class="text-input" type="text" name="input-texto" id="inputtexto" >Coloca el texto que deseas encriptar o desencriptar.</textarea>
-      </div>
-      <div class="right">
-        
-        <img src="img/Muñeco.png" id="imgDer">
-        <h1 id="texto" style="color: white;" >Ningún mensaje fue encontrado</h1>
-      
-        <div class="texto3">
-          <textarea id="texto2"></textarea>
+    <section>
+      <div class="inti glass">
+        <div class="Vector">
+          <img class="logoImg" src="img/Logo.png">
+          <h1 class="tittle">Encriptador de Mensajes <span class="tech">2.0</span></h1>
         </div>
-        
-        <button type="button" id="copiar" onclick="copia()">Copiar</button>
+        <div class="main-content">
+          <div class="left">
+            <label for="inputtexto" class="label-input">Texto a procesar:</label>
+            <textarea class="text-input" name="input-texto" id="inputtexto" placeholder="Coloca el texto que deseas encriptar o desencriptar..."></textarea>
+            <div class="options">
+              <label for="algoritmo">Algoritmo:</label>
+              <select id="algoritmo">
+                <option value="basico">Básico</option>
+                <option value="reversa">Reversa</option>
+                <option value="base64">Base64</option>
+                <option value="cesar">César (+3)</option>
+                <option value="rot13">ROT13</option>
+                <option value="binario">Binario</option>
+              </select>
+              <button type="button" class="btn-limpiar" onclick="limpiar()">Limpiar</button>
+            </div>
+            <div class="left-button">
+              <p class="parrafo">Sólo letras minúsculas y sin acento</p>
+              <button type="button" class="btn-encriptar" onclick="encriptar()">Encriptar</button>
+              <button type="button" class="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+          </div>
+          <div class="right">
+            <img src="img/Muñeco.png" id="imgDer">
+            <h1 id="texto" class="mensaje-info">Ningún mensaje fue encontrado</h1>
+            <div class="texto3">
+              <textarea id="texto2" readonly></textarea>
+            </div>
+            <div class="acciones">
+              <button type="button" id="copiar" onclick="copia()"><span class="icon">📋</span> Copiar</button>
+              <button type="button" id="descargar" onclick="descargar()"><span class="icon">⬇️</span> Descargar</button>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="left-button">
-        <p class="parrafo" style="color: white;" >Sólo letra minusculas y sin acento</p>
-        <button type="button" class="btn-encriptar" onclick="encriptar()" >
-          <a href="#texto2" id="btn-encriptar">Encriptar</a></button>
-          
-        <button type="button" class="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
-      </div>
-    </div>
-  </section>
+    </section>
   </body>
 </html>
