@@ -1,3 +1,238 @@
+@media (max-width: 600px) {
+  .main-content {
+    flex-direction: column;
+  }
+  .left {
+    order: 1;
+  }
+  .right {
+    order: 2;
+    margin-top: 18px;
+    width: 98vw;
+    min-width: 0;
+    padding: 10px 1vw;
+    border-radius: 10px;
+    background: rgba(30,30,60,0.22);
+    box-shadow: 0 1px 6px 0 rgba(144,32,43,0.10);
+  }
+}
+@media (max-width: 900px) {
+  .inti {
+    min-height: 100vh;
+    width: 100vw;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .main-content {
+    flex-direction: column;
+    gap: 32px;
+    width: 100vw;
+    align-items: stretch;
+  }
+  .left, .right {
+    width: 96vw;
+    min-width: 0;
+    padding: 18px 2vw 18px 2vw;
+    border-radius: 18px;
+    margin: 0 auto 18px auto;
+    background: rgba(30,30,60,0.18);
+    box-shadow: 0 2px 12px 0 rgba(144,32,43,0.10);
+  }
+  .acciones {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 12px;
+  }
+  .text-input, #texto2 {
+    font-size: 17px;
+    padding: 12px;
+    min-height: 70px;
+    border-radius: 10px;
+  }
+  .btn-encriptar, .btn-desencriptar, .btn-limpiar, #copiar, #descargar {
+    font-size: 17px;
+    padding: 14px 18px;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 8px;
+    min-width: 120px;
+  }
+  .left-button {
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+    margin-top: 18px;
+  }
+  .options {
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+  .logoImg {
+    width: 56px;
+    height: 56px;
+  }
+  .tittle {
+    font-size: 32px;
+    margin: 0 0 0 10px;
+  }
+  .tech {
+    font-size: 20px;
+  }
+  .Vector {
+    gap: 10px;
+    margin-bottom: 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .inti {
+    min-height: unset;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+  }
+  .main-content {
+    flex-direction: column;
+    gap: 12px;
+    width: 100vw;
+    align-items: stretch;
+  }
+  .left, .right {
+    width: 98vw;
+    padding: 10px 1vw;
+    border-radius: 10px;
+    margin: 0 auto 12px auto;
+    background: rgba(30,30,60,0.22);
+    box-shadow: 0 1px 6px 0 rgba(144,32,43,0.10);
+  }
+  .logoImg {
+    width: 38px;
+    height: 38px;
+  }
+  .tittle {
+    font-size: 20px;
+    margin: 0 0 0 6px;
+  }
+  .tech {
+    font-size: 13px;
+  }
+  .text-input, #texto2 {
+    font-size: 13px;
+    padding: 7px;
+    min-height: 40px;
+    border-radius: 7px;
+  }
+  .btn-encriptar, .btn-desencriptar, .btn-limpiar, #copiar, #descargar {
+    font-size: 13px;
+    padding: 8px 8px;
+    border-radius: 7px;
+    width: 100%;
+    margin-bottom: 6px;
+    min-width: 80px;
+  }
+  .left-button {
+    flex-direction: column;
+    gap: 7px;
+    align-items: stretch;
+    margin-top: 10px;
+  }
+  .options {
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-start;
+    margin-bottom: 7px;
+  }
+  .Vector {
+    gap: 6px;
+    margin-bottom: 6px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+/* --- RESPONSIVE DESIGN --- */
+@media (max-width: 1200px) {
+  .inti {
+    width: 98vw;
+    padding: 10px 2vw;
+  }
+  .main-content {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .inti {
+    min-height: 100vh;
+    width: 100vw;
+    padding: 10px 0;
+  }
+  .main-content {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .left, .right {
+    width: 100%;
+    min-width: 0;
+    padding: 10px 0;
+  }
+  .acciones {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .inti {
+    min-height: unset;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+  }
+  .main-content {
+    flex-direction: column;
+    gap: 12px;
+    width: 100vw;
+  }
+  .left, .right {
+    width: 100vw;
+    padding: 8px 2vw;
+    border-radius: 0;
+    min-width: 0;
+  }
+  .logoImg {
+    width: 48px;
+    height: 48px;
+  }
+  .tittle {
+    font-size: 28px;
+  }
+  .tech {
+    font-size: 18px;
+  }
+  .text-input, #texto2 {
+    font-size: 15px;
+    padding: 8px;
+    min-height: 60px;
+  }
+  .btn-encriptar, .btn-desencriptar, .btn-limpiar, #copiar, #descargar {
+    font-size: 15px;
+    padding: 8px 12px;
+  }
+  .label-input {
+    font-size: 15px;
+  }
+  .Vector {
+    gap: 8px;
+  }
+}
 body {
   margin: 0;
   padding: 0;
